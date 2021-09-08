@@ -59,3 +59,6 @@ have $44/$100 left for gas), and the amount spent on uncategorized purchases.
 
 1. You must build your website using JavaScript, JSON, AJAX, Python, and
 	Flask.
+	
+	
+1. Run The application by setting the FLASK_APP environment variable to your budget.py and running flask run
