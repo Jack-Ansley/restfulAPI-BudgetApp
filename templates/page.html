@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>P4 Budget App</title>
+	<script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+
+
+		<h1>P4 Budget App</h1>
+
+		<h3>Currently budgeting for the month of <span id="currentMonth"></span></h3>
+
+
+
+		<h2>Table of Categories</h2>
+
+
+		<table>
+			<thead>
+
+    		<tr>
+					<th scope="col">Category</th>
+					<th scope="col">Remaining</th>
+					<th scope="col">Original</th>
+					<th scope="col"></th>
+			</tr>
+			</thead>
+			<tbody id="categories">
+			</tbody>
+		</table>
+
+		<br>
+
+
+		<b>Add Category:</b><br>
+		Category: <label for="addCat_category"></label><input id="addCat_category"> <br>
+		Budget Amount: <label for="addCat_budget"></label><input id="addCat_budget"><br>
+		<input type="submit" name="submit" value="Submit" id="addCat_submit"><br>
+		<br>
+
+		<hr>
+		<hr>
+
+		<h2>Table of Purchases</h2>
+
+		<table>
+			<thead>
+				<tr>
+					<th scope="col">Date</th>
+					<th scope="col">Item</th>
+					<th scope="col">Category</th>
+					<th scope="col">Amount</th>
+				</tr>
+			</thead>
+			<tbody id="purchases">
+			</tbody>
+		</table>
+
+
+		<b>Add Purchase:</b><br>
+		Date: <label for="addPur_date"></label><input type="date" id="addPur_date"> <br>
+		Category: <label for="addPur_category"></label><select id="addPur_category"></select><br>
+		Item/Service: <label for="addPur_item"></label><input type="text" id="addPur_item"><br>
+		Amount: <label for="addPur_amount"></label><input type="text" id="addPur_amount"><br>
+		<input type="submit" name="submit" value="Submit" id="addPur_submit" />
+
+
+
+
+</body>
+</html>
